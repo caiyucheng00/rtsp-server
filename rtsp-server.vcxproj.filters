@@ -11,6 +11,12 @@
     <ClCompile Include="Scheduler\Event.cpp">
       <Filter>Scheduler</Filter>
     </ClCompile>
+    <ClCompile Include="Scheduler\Poller.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\SelectPoller.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -37,6 +43,12 @@
       <Filter>Scheduler</Filter>
     </ClInclude>
     <ClInclude Include="Scheduler\Event.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Poller.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\SelectPoller.h">
       <Filter>Scheduler</Filter>
     </ClInclude>
   </ItemGroup>
