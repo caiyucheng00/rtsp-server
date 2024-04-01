@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scheduler\Thread.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\ThreadPool.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\Event.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{1af587d0-a938-4af6-8999-c98057239762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Live">
+      <UniqueIdentifier>{6259585e-0511-4662-8a60-f557c471c2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scheduler">
+      <UniqueIdentifier>{d8b1d539-cc14-41a3-9fd3-8052aea89dcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\Log.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Version.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Thread.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ThreadPool.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Event.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
