@@ -23,6 +23,9 @@
     <ClCompile Include="Scheduler\Timer.cpp">
       <Filter>Scheduler</Filter>
     </ClCompile>
+    <ClCompile Include="Scheduler\UsageEnvironment.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -61,6 +64,9 @@
       <Filter>Scheduler</Filter>
     </ClInclude>
     <ClInclude Include="Scheduler\Timer.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\UsageEnvironment.h">
       <Filter>Scheduler</Filter>
     </ClInclude>
   </ItemGroup>

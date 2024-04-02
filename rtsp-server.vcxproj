@@ -150,6 +150,7 @@
     <ClCompile Include="Scheduler\ThreadPool.cpp" />
     <ClCompile Include="Scheduler\SelectPoller.cpp" />
     <ClCompile Include="Scheduler\Timer.cpp" />
+    <ClCompile Include="Scheduler\UsageEnvironment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scheduler\EventScheduler.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Scheduler\ThreadPool.h" />
     <ClInclude Include="Scheduler\SelectPoller.h" />
     <ClInclude Include="Scheduler\Timer.h" />
+    <ClInclude Include="Scheduler\UsageEnvironment.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="Utils\Version.h" />
   </ItemGroup>
