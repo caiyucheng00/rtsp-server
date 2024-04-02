@@ -142,19 +142,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Scheduler\EventScheduler.cpp" />
     <ClCompile Include="Scheduler\Poller.cpp" />
     <ClCompile Include="Scheduler\Event.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Scheduler\Thread.cpp" />
     <ClCompile Include="Scheduler\ThreadPool.cpp" />
     <ClCompile Include="Scheduler\SelectPoller.cpp" />
+    <ClCompile Include="Scheduler\Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Scheduler\EventScheduler.h" />
     <ClInclude Include="Scheduler\Poller.h" />
     <ClInclude Include="Scheduler\Event.h" />
     <ClInclude Include="Scheduler\Thread.h" />
     <ClInclude Include="Scheduler\ThreadPool.h" />
     <ClInclude Include="Scheduler\SelectPoller.h" />
+    <ClInclude Include="Scheduler\Timer.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="Utils\Version.h" />
   </ItemGroup>
