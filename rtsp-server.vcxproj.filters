@@ -26,6 +26,15 @@
     <ClCompile Include="Scheduler\UsageEnvironment.cpp">
       <Filter>Scheduler</Filter>
     </ClCompile>
+    <ClCompile Include="Live\Source.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\H264Source.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\AACSource.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -68,6 +77,15 @@
     </ClInclude>
     <ClInclude Include="Scheduler\UsageEnvironment.h">
       <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\Source.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\H264Source.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\AACSource.h">
+      <Filter>Live</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

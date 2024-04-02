@@ -131,7 +131,7 @@ void EventScheduler::setTimerManagerReadCallback(EventCallback callback, void* a
 
 void EventScheduler::loop()
 {
-	// 定时器
+	// 定时器事件
 	std::thread([](EventScheduler* scheduler) {
 		while (!scheduler->_quit)
 		{
