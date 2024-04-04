@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="Live\AACSource.cpp" />
     <ClCompile Include="Live\H264Source.cpp" />
+    <ClCompile Include="Live\RTPPacket.cpp" />
     <ClCompile Include="Scheduler\EventScheduler.cpp" />
     <ClCompile Include="Scheduler\Poller.cpp" />
     <ClCompile Include="Scheduler\Event.cpp" />
@@ -154,10 +155,12 @@
     <ClCompile Include="Scheduler\Timer.cpp" />
     <ClCompile Include="Scheduler\UsageEnvironment.cpp" />
     <ClCompile Include="Live\Source.cpp" />
+    <ClCompile Include="Live\Sink.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Live\AACSource.h" />
     <ClInclude Include="Live\H264Source.h" />
+    <ClInclude Include="Live\RTPPacket.h" />
     <ClInclude Include="Scheduler\EventScheduler.h" />
     <ClInclude Include="Scheduler\Poller.h" />
     <ClInclude Include="Scheduler\Event.h" />
@@ -167,6 +170,7 @@
     <ClInclude Include="Scheduler\Timer.h" />
     <ClInclude Include="Scheduler\UsageEnvironment.h" />
     <ClInclude Include="Live\Source.h" />
+    <ClInclude Include="Live\Sink.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="Utils\Version.h" />
   </ItemGroup>

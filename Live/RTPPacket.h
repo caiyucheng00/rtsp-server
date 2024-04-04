@@ -2,7 +2,15 @@
 #define __RTPPACKET__H_
 
 #include <stdint.h>
+#include <stdlib.h>
 
+#define RTP_VESION              2
+
+#define RTP_PAYLOAD_TYPE_H264   96
+#define RTP_PAYLOAD_TYPE_AAC    97
+
+#define RTP_HEADER_SIZE         12
+#define RTP_MAX_PKT_SIZE        1400
 /*
   *    0                   1                   2                   3
   *    7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0|7 6 5 4 3 2 1 0
@@ -57,6 +65,17 @@ struct RtcpHeader
 
 class RTPPacket
 {
+public:
+	RTPPacket();
+	~RTPPacket();
+
+	uint8_t* _buf; // 4+rtpHeader+rtpBody
+	uint8_t* _buf4;// rtpHeader+rtpBody
+	RtpHeader* const _rtpHeader;
+	int _size;// rtpHeader+rtpBody
+
 };
 
+void parseRtpHeader(uint8_t* buf, struct RtpHeader* rtpHeader);
+void parseRtcpHeader(uint8_t* buf, struct RtcpHeader* rtcpHeader);
 #endif

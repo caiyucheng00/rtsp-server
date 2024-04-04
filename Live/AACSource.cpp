@@ -9,7 +9,7 @@ AACSource::AACSource(UsageEnvironment* env, const std::string& file) :
 	setFPS(43);
 
 	for (int i = 0; i < DEFAULT_FRAME_NUM; ++i) {
-		_env->getThreadPool()->addTask(_task);
+		_env->getThreadPool()->addTask(_task);    //task执行的是handleTask
 	}
 }
 
@@ -31,11 +31,11 @@ void AACSource::handleTask()
 	}
 
 	MediaFrame* frame = _frame_input_queue.front();
-	frame->_size = getFrameFromAACFile(frame->_temp, FRAME_MAX_SIZE);
+	frame->_size = getFrameFromAACFile(frame->_temp, FRAME_MAX_SIZE);  // 填充Frame
 	if (frame->_size < 0) {
 		return;
 	}
-	frame->_buf = frame->_temp;
+	frame->_buf = frame->_temp;    //填充Frame包含adts头
 
 	_frame_input_queue.pop();
 	_frame_output_queue.push(frame);
@@ -47,18 +47,18 @@ int AACSource::getFrameFromAACFile(uint8_t* buf, int size)
 
 	uint8_t tmpBuf[7];
 	int ret = 0;
-	ret = fread(tmpBuf, 1, 7, _file);
+	ret = fread(tmpBuf, 1, 7, _file);   // 读取前7个字节-adts头
 	if (ret <= 0) {
 		fseek(_file, 0, SEEK_SET);
 		ret = fread(tmpBuf, 1, 7, _file);
 		if (ret <= 0) return -1;
 	}
 
-	if (!parseAdtsHeader(tmpBuf, &_adtsHeader)) return -1;
+	if (!parseAdtsHeader(tmpBuf, &_adtsHeader)) return -1;  // 填充adts头
 	if (_adtsHeader.aacFrameLength > size) return -1;
 
 	memcpy(buf, tmpBuf, 7);
-	ret = fread(buf + 7, 1, _adtsHeader.aacFrameLength - 7, _file);
+	ret = fread(buf + 7, 1, _adtsHeader.aacFrameLength - 7, _file);  //读取（总长度-头）=体
 	if (ret < 0) {
 		LOGE("read error");
 		return -1;

@@ -35,6 +35,12 @@
     <ClCompile Include="Live\AACSource.cpp">
       <Filter>Live</Filter>
     </ClCompile>
+    <ClCompile Include="Live\RTPPacket.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\Sink.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -85,6 +91,12 @@
       <Filter>Live</Filter>
     </ClInclude>
     <ClInclude Include="Live\AACSource.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\RTPPacket.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\Sink.h">
       <Filter>Live</Filter>
     </ClInclude>
   </ItemGroup>

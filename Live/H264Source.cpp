@@ -12,7 +12,7 @@ H264Source::H264Source(UsageEnvironment* env, const std::string& file) :
 	setFPS(25);
 
 	for (int i = 0; i < DEFAULT_FRAME_NUM; ++i) {
-		_env->getThreadPool()->addTask(_task);
+		_env->getThreadPool()->addTask(_task);     //task执行的是handleTask
 	}
 }
 
@@ -37,7 +37,7 @@ void H264Source::handleTask()
 	int startCodeNum = 0;
 
 	while (true) {
-		frame->_size = getFrameFromH264File(frame->_temp, FRAME_MAX_SIZE);
+		frame->_size = getFrameFromH264File(frame->_temp, FRAME_MAX_SIZE);  //填充Frame
 		if (frame->_size < 0) {
 			return;
 		}
@@ -49,7 +49,7 @@ void H264Source::handleTask()
 		{
 			startCodeNum = 4;
 		}
-		frame->_buf = frame->_temp + startCodeNum;
+		frame->_buf = frame->_temp + startCodeNum;   //填充Frame不包括startcode
 		frame->_size -= startCodeNum;
 
 		uint8_t naluType = frame->_buf[0] & 0x1F;
