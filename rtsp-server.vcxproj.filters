@@ -41,6 +41,27 @@
     <ClCompile Include="Live\Sink.cpp">
       <Filter>Live</Filter>
     </ClCompile>
+    <ClCompile Include="Live\H264Sink.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\AACSink.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SocketsOps.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\InetAddress.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\RTPInstance.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\MediaSession.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\MediaSessionManager.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -97,6 +118,27 @@
       <Filter>Live</Filter>
     </ClInclude>
     <ClInclude Include="Live\Sink.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\H264Sink.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\AACSink.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SocketsOps.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\InetAddress.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\RTPInstance.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\MediaSession.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\MediaSessionManager.h">
       <Filter>Live</Filter>
     </ClInclude>
   </ItemGroup>

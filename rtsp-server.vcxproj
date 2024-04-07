@@ -114,7 +114,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions> /D _CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -142,9 +142,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Live\InetAddress.cpp" />
+    <ClCompile Include="Live\AACSink.cpp" />
+    <ClCompile Include="Live\H264Sink.cpp" />
     <ClCompile Include="Live\AACSource.cpp" />
     <ClCompile Include="Live\H264Source.cpp" />
     <ClCompile Include="Live\RTPPacket.cpp" />
+    <ClCompile Include="Live\RTPInstance.cpp" />
+    <ClCompile Include="Live\MediaSession.cpp" />
+    <ClCompile Include="Live\MediaSessionManager.cpp" />
     <ClCompile Include="Scheduler\EventScheduler.cpp" />
     <ClCompile Include="Scheduler\Poller.cpp" />
     <ClCompile Include="Scheduler\Event.cpp" />
@@ -156,11 +162,18 @@
     <ClCompile Include="Scheduler\UsageEnvironment.cpp" />
     <ClCompile Include="Live\Source.cpp" />
     <ClCompile Include="Live\Sink.cpp" />
+    <ClCompile Include="Utils\SocketsOps.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Live\InetAddress.h" />
+    <ClInclude Include="Live\AACSink.h" />
+    <ClInclude Include="Live\H264Sink.h" />
     <ClInclude Include="Live\AACSource.h" />
     <ClInclude Include="Live\H264Source.h" />
     <ClInclude Include="Live\RTPPacket.h" />
+    <ClInclude Include="Live\RTPInstance.h" />
+    <ClInclude Include="Live\MediaSession.h" />
+    <ClInclude Include="Live\MediaSessionManager.h" />
     <ClInclude Include="Scheduler\EventScheduler.h" />
     <ClInclude Include="Scheduler\Poller.h" />
     <ClInclude Include="Scheduler\Event.h" />
@@ -171,6 +184,7 @@
     <ClInclude Include="Scheduler\UsageEnvironment.h" />
     <ClInclude Include="Live\Source.h" />
     <ClInclude Include="Live\Sink.h" />
+    <ClInclude Include="Utils\SocketsOps.h" />
     <ClInclude Include="Utils\Log.h" />
     <ClInclude Include="Utils\Version.h" />
   </ItemGroup>

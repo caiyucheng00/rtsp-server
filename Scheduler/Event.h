@@ -34,8 +34,8 @@ public:
 	void stop();
 
 private:
-	void* _arg;
-	EventCallback _timeoutCallback;
+	void* _arg;    // Sink
+	EventCallback _timeoutCallback;  //Sink::handleTimeout()
 	bool _isStop;
 };
 
