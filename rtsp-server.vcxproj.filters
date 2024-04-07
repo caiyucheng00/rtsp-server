@@ -62,6 +62,18 @@
     <ClCompile Include="Live\MediaSessionManager.cpp">
       <Filter>Live</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\Buffer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\RTSPConnection.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\TCPConnection.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\RTSPServer.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -139,6 +151,18 @@
       <Filter>Live</Filter>
     </ClInclude>
     <ClInclude Include="Live\MediaSessionManager.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Buffer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\RTSPConnection.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\TCPConnection.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\RTSPServer.h">
       <Filter>Live</Filter>
     </ClInclude>
   </ItemGroup>

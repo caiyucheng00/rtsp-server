@@ -142,6 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Live\RTSPConnection.cpp" />
+    <ClCompile Include="Live\TCPConnection.cpp" />
+    <ClCompile Include="Live\RTSPServer.cpp" />
+    <ClCompile Include="Utils\Buffer.cpp" />
     <ClCompile Include="Live\InetAddress.cpp" />
     <ClCompile Include="Live\AACSink.cpp" />
     <ClCompile Include="Live\H264Sink.cpp" />
@@ -165,6 +169,10 @@
     <ClCompile Include="Utils\SocketsOps.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Live\RTSPConnection.h" />
+    <ClInclude Include="Live\TCPConnection.h" />
+    <ClInclude Include="Live\RTSPServer.h" />
+    <ClInclude Include="Utils\Buffer.h" />
     <ClInclude Include="Live\InetAddress.h" />
     <ClInclude Include="Live\AACSink.h" />
     <ClInclude Include="Live\H264Sink.h" />
